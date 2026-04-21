@@ -3,48 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/style.css" />
     <title>Haikou Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Haikou Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the Haikou poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        The cicada's cry
-        <br />
-        contains no hint to foretell
-        <br />
-        how soon it must die.
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/eldimitrakog-alt" target="_blank"
-        >Elisavet Dimitrakogianni</a
-      >
-      and is
-      <a
-        href="https://github.com/eldimitrakog-alt/ai-haikou-generator"
-        target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://ai-haikou-generator.onrender.com/" target="_blank"
-        >hosted on Render</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Haikou Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the Haikou poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          The cicada's cry
+          <br />
+          contains no hint to foretell
+          <br />
+          how soon it must die.
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/eldimitrakog-alt" target="_blank"
+          >Elisavet Dimitrakogianni</a
+        >
+        and is
+        <a
+          href="https://github.com/eldimitrakog-alt/ai-haikou-generator"
+          target="_blank"
+          >open-sourced on GitHub</a
+        ><br />
+        and is
+        <a href="https://ai-haikou-generator.onrender.com/" target="_blank"
+          >hosted on Render</a
+        >
+      </footer>
+    </div>
     <script src="./src/index.js"></script>
   </body>
 </html>
