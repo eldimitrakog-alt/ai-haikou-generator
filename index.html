@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap"
@@ -18,20 +19,26 @@
       <header>
         <h1>AI Haikou Generator</h1>
       </header>
+
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the Haikou poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the Haikou poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint"></div>
+        </div>
         <div class="poem" id="poem"></div>
       </main>
+
       <footer>
         This AI project was coded by
         <a href="https://github.com/eldimitrakog-alt" target="_blank"
@@ -49,6 +56,7 @@
         >
       </footer>
     </div>
+
     <script src="./src/index.js"></script>
   </body>
 </html>
