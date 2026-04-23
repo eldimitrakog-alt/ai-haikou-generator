@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap"
       rel="stylesheet"
@@ -18,7 +19,7 @@
         <h1>AI Haikou Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the Haikou poem"
@@ -29,13 +30,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          The cicada's cry
-          <br />
-          contains no hint to foretell
-          <br />
-          how soon it must die.
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
       <footer>
         This AI project was coded by
